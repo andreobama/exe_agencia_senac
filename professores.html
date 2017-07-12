@@ -42,7 +42,7 @@
       <div class="card-panel">
 
         <div class="row">
-          <h5 class="center-align">Lista de Professores</h5>
+          <h5 class="center-align">Lista de Professores 2</h5>
           <div class="divider"></div>
         </div>
 
@@ -63,21 +63,7 @@
                 </tr>
               </thead>
 
-              <tbody>
-                <tr>
-                  <td>
-                    <input type="radio" name="edicao" id="row1">
-                    <label for="row1"></label>
-                  </td>
-                  <td>Jefferson</td>
-                  <td>28</td>
-                  <td>Masculino</td>
-                  <td>Superior</td>
-                  <td>Tecnologia da Informação</td>
-                  <td>01/01/2017</td>
-                  <td>31/08/2017</td>
-                </tr>
-              </tbody>
+              <tbody id="corpoTabela"></tbody>
             </table>
           </form>
         </div>
@@ -85,7 +71,7 @@
         <div class="row">
           <a href="#modalAdicionar" class="waves-effect waves-light btn green">adicionar</a>
           <a class="waves-effect waves-light btn blue">editar</a>
-          <a class="waves-effect waves-light btn red">remover</a>
+          <a id="removerBtn"class="waves-effect waves-light btn red">remover</a>
         </div>
       </div>
 
@@ -116,9 +102,9 @@
 
               <div class="input-field col s8">
                 <p>
-                  <input class="with-gap" name="genero" type="radio" id="masculino" value="masculino" />
+                  <input class="with-gap" name="genero" type="radio" id="masculino" value="Masculino" />
                   <label for="masculino">Masculino</label>
-                  <input class="with-gap" name="genero" type="radio" id="feminino" value="feminino"  />
+                  <input class="with-gap" name="genero" type="radio" id="feminino" value="Feminino"  />
                   <label for="feminino">Feminino</label>
                 </p>
               </div>
@@ -179,13 +165,14 @@
 
       <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">cancelar</a>
-        <a class="waves-effect waves-light btn green">salvar</a>
-        <a 
+        <a id="salvarBtn" class="waves-effect waves-light btn green">salvar</a>
+        
       </div>
     </div>
 
   </main>
 
+  <script src="professores_dados.json"></script>
   <script src="professores.js"></script>
 
   
