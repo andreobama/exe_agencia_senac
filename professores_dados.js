@@ -4,7 +4,7 @@ var dados =`
         "nome": "Jeferson",
         "idade": 28,
         "genero": "Masculino",
-        "formação": "Superior",
+        "formacao": "Superior",
         "areaAtuacao": "",
         "disponibilidadeInico": null,
         "disponibilidadeFim": null
@@ -14,7 +14,7 @@ var dados =`
         "nome": "Fulano",
         "idade": 28,
         "genero": "Masculino",
-        "formação": "Pós-graduado",
+        "formacao": "Pós-graduado",
         "areaAtuacao": "",
         "disponibilidadeInico": null,
         "disponibilidadeFim": null

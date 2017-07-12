@@ -73,7 +73,8 @@ function adicionarProfessorNaTabela(professor) {
                                     "<label for= '" + idvalue + "'></label>" +
                                     "</td>" +
                                      "<td>" + professor.nome +"</td>" +
-                                      "<td>" + professor.idade +"</td>" +
+                                "<td>" + professor.idade +"</td>" +
+                                     "<td>" + professor.genero + "</td>" +
                                       "<td>" + professor.formacao +"</td>" +
                                       "<td>" + professor.areaAtuacao +"</td>" +
                                       "<td>" + professor.disponibilidadedeInicio +"</td>" +
@@ -101,7 +102,7 @@ function inicializarDados() {
     var listaProfessores = JSON.parse(dados);
     
     listaProfessores.forEach(function (professor) {
-      adicionarProfessorNaTela(professor);  
+      adicionarProfessorNaTabela(professor);  
     });
 
 }
