@@ -37,8 +37,8 @@ $("#salvarBtn").click(function () {
 
         adicionarProfessorNaTabela(professor);
         Materialize.toast("Professor cadastrado!", 5000);
-        $ ("#modalAdicionar").modal("close");
-        $ ("#cadastroProfesssor").trigger("reset");
+        $("#modalAdicionar").modal("close");
+        $("#cadastroProfesssor").trigger("reset");
     } else {
         // mensagem de erro
         
@@ -73,7 +73,7 @@ function adicionarProfessorNaTabela(professor) {
                                     "<label for= '" + idvalue + "'></label>" +
                                     "</td>" +
                                      "<td>" + professor.nome +"</td>" +
-                                "<td>" + professor.idade +"</td>" +
+                                     "<td>" + professor.idade +"</td>" +
                                      "<td>" + professor.genero + "</td>" +
                                       "<td>" + professor.formacao +"</td>" +
                                       "<td>" + professor.areaAtuacao +"</td>" +
@@ -104,5 +104,28 @@ function inicializarDados() {
     listaProfessores.forEach(function (professor) {
       adicionarProfessorNaTabela(professor);  
     });
+
+}
+
+$("#editarBtn").click(function(){
+
+   //checar se está selecionado
+
+   //abrir modal
+   //preecher dados nos inputs
+
+    var editar = (professor);
+    if (editar){
+        // Lógica para editar
+        editarProfessorNaTabela(professor);   
+        Materialize.toast("Editado com sucesso!", 5000);
+    } else {
+        //mensagem de erro
+        Materialize.toast("Selecione um registro para editar!", 5000);
+    }
+});
+
+function editarProfessorNaTabela (professor) {
+    alert("campo para edição");
 
 }
